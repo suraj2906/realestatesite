@@ -4,12 +4,12 @@ import Property from "@/models/Property";
 
 export async function GET(
   request: Request,
-  { params }: { params: { id: string } }
+  props : { params: { id: string } }
 ) {
   try {
     
     await dbConnect()
-    const id = (await params).id
+    const id = (await props.params).id
     const property = await Property.findById(id)
 
     if (!property) {
