@@ -14,7 +14,7 @@ async function getProperty(id: string) {
   }
 }
 
-export default async function PropertyPage({ params }: { params: { id: string } }) {
+export default async function PropertyPage({ params }: { params: Promise<{ id: string }> }) {
     const id = (await params).id
     const property = await getProperty(id)
   
