@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 const playfair = Playfair_Display({ 
+  variable: "--font-playfair",
   subsets: ['latin'],
   display: 'swap',
 })
@@ -21,6 +22,7 @@ const playfair = Playfair_Display({
 const montserrat = Montserrat({ 
   subsets: ['latin'],
   display: 'swap',
+  variable: "--font-montserrat",
 })
 
 export const metadata: Metadata = {

@@ -117,7 +117,7 @@ export default function Home() {
           viewport={{ once: true }}
         >
           {[
-            { title: 'Luxury Sales', desc: 'Exclusive high-end properties curated for discerning buyers' },
+            { title: 'Luxury Sales', desc: 'Exclusive high-end properties curated for discerning buyers and Renters' },
             { title: 'Highly Experienced', desc: 'Have 8 years of experience in the real estate industry' },
             { title: 'Scope of Work', desc: 'Working within Mumbai, specifically Andheri to Colaba' }
           ].map((service) => (

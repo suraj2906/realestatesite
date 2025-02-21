@@ -71,12 +71,12 @@ export default async function PropertyPage({ params }: { params: Promise<{ id: s
                     <div className="mt-8">
                         <h2 className="text-2xl font-semibold mb-4 text-black">Features</h2>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                            {property.features?.map((feature: string, index: number) => (
+                            {/* {property.features?.map((feature: string, index: number) => (
                                 <div key={index} className="flex items-center gap-2 text-gray-600">
                                     <i className="fas fa-check text-gold-500"></i>
                                     <span>{feature}</span>
                                 </div>
-                            ))}
+                            ))} */}
                         </div>
                     </div>
                 </div>
