@@ -8,7 +8,7 @@ export interface IProperty {
   bedrooms: number;
   bathrooms: number;
   status: 'For Sale' | 'For Rent' | 'Sold' | 'Rented';
-  imageUrl?: string;
+  imageUrl: string[];
   createdAt: Date;
 }
 
@@ -42,10 +42,7 @@ const PropertySchema = new Schema<IProperty>({
     enum: ['For Sale', 'For Rent', 'Sold', 'Rented'],
     default: 'For Sale'
   },
-  imageUrl: {
-    type: String,
-    default: ''
-  },
+  imageUrl: [String],
   createdAt: {
     type: Date,
     default: Date.now
